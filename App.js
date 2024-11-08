@@ -1,9 +1,7 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 
-const showName = () => {
-  return 'SERMAD AHMAD';
-};
+const Name = () => <Text>SERMAD AHMAD</Text>;
 
 const App = () => {
   
@@ -12,7 +10,7 @@ const App = () => {
   return (
       <View>
         {items.map((_, i) => (
-        <Text key={i}>{showName()}</Text>
+        <Name key = {i} />
     ))}
       </View>
   );
