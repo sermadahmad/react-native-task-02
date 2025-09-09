@@ -8,7 +8,11 @@ const App = () => {
       const items = Array.from({ length: 10 });
 
   return (
-      <View>
+      <View style={{
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center"
+      }}>
         {items.map((_, i) => (
         <Name key = {i} />
     ))}
